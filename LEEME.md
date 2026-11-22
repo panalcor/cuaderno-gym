@@ -24,6 +24,12 @@ y abrir http://localhost:8097
 Tiene que estar servida por HTTPS (por ejemplo GitHub Pages). Abrir la dirección en Chrome →
 menú ⋮ → «Instalar aplicación» / «Añadir a pantalla de inicio».
 
+## Pendiente: APK para distribuirla (cuando la app esté acabada)
+- Vía elegida: TWA con PWABuilder (pwabuilder.com) o Bubblewrap. Abre la web publicada en Chrome a pantalla completa; Drive sigue funcionando y se actualiza sola con la web.
+- Para quitar la barra de direcciones: `assetlinks.json` en `panalcor.github.io/.well-known/` (crear repo `panalcor.github.io` o usar dominio propio).
+- Distribución: APK suelto (WhatsApp/correo, permitir orígenes desconocidos) o Google Play (AAB, cuenta de desarrollador ~25 $; comprobar requisitos de prueba cerrada).
+- Los datos de la versión web pasan al APK con Exportar/Importar copia.
+
 ## Google Drive
 Pasos en Ajustes → Google Drive → «Configurar conexión con Google».
 El origen autorizado del ID de cliente OAuth debe ser exactamente la dirección donde está publicada la app
